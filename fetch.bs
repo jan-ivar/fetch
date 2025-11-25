@@ -2245,6 +2245,20 @@ Unless stated otherwise, it is false.
 
 <p class=note>This flag is for exclusive use by HTML's render-blocking mechanism. [[!HTML]]
 
+<p>A <a for=/>request</a> has an associated <dfn export for=request
+id=concept-request-unsafe-webtransport-hashes>unsafe-webtransport-hashes</dfn> (a
+<a for=/>list</a> of [=unsafe-webtransport-hash=] items). Unless stated otherwise it is « ».
+
+<p>An <dfn export id=concept-unsafe-webtransport-hash>unsafe-webtransport-hash</dfn> is a
+<a for=/>tuple</a> that consists of
+<dfn export for=unsafe-webtransport-hash id=concept-unsafe-webtransport-hash-algorithm>algorithm</dfn>
+(a <a for=/>string</a>) and
+<dfn export for=unsafe-webtransport-hash id=concept-unsafe-webtransport-hash-value>value</dfn> (a <a for=/>byte sequence</a>).
+
+<p class=note>This list is for exclusive use by
+{{WebTransport/WebTransport(url, options)}} when options contains
+{{WebTransportOptions/serverCertificateHashes}}.
+
 <hr>
 
 <p>A <a for=/>request</a> has an associated
